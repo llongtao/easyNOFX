@@ -30,7 +30,7 @@ ASTER 用户注意:
 *本程序仅支持 Ubuntu24.04系统*
 
 ```
-wget https://raw.githubusercontent.com/ShenXuGongZi/easyNOFX/refs/heads/main/install_nofx_ubuntu.sh  && chmod +x install_nofx_ubuntu.sh && bash install_nofx_ubuntu.sh `
+wget https://raw.githubusercontent.com/llongtao/easyNOFX/refs/heads/main/install_nofx_ubuntu.sh  && chmod +x install_nofx_ubuntu.sh && bash install_nofx_ubuntu.sh `
 ```
 
 **管理脚本**
@@ -54,7 +54,7 @@ nofx
 * 可一键同步nofx源码更新
 
 ```
-wget https://raw.githubusercontent.com/ShenXuGongZi/easyNOFX/refs/heads/main/force_update_nofx.sh && chmod +x force_update_nofx.sh  && bash force_update_nofx.sh
+wget https://raw.githubusercontent.com/llongtao/easyNOFX/refs/heads/main/force_update_nofx.sh && chmod +x force_update_nofx.sh  && bash force_update_nofx.sh
 ```
 
 `找到这一行并修改为你的域名 YOUR\_DOMAIN="hype.teidihen.com"  # 改成你的域名`
