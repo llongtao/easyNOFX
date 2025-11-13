@@ -1072,16 +1072,9 @@ deploy_docker() {
     print_info "开始构建 Docker 镜像..."
     echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
     
-    if docker compose up -d --build 2>&1 | tee -a "$LOG_FILE" | grep -E "Building|Pulling|Creating|Starting"; then
-        echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
-        echo ""
-        print_message "Docker 服务启动成功 ✓"
-    else
-        echo ""
-        print_error "Docker 服务启动失败"
-        print_info "查看详细日志: docker compose logs"
-        exit 1
-    fi
+    chmod +x start.sh
+    start.sh start --build
+    
     
     # 配置防火墙
     configure_firewall
