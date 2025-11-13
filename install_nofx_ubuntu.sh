@@ -1066,13 +1066,16 @@ deploy_docker() {
     
     # 清理旧容器（如果存在）
     print_info "清理旧容器和网络..."
-    docker compose down --remove-orphans >> "$LOG_FILE" 2>&1 || true
+    chmod +x start.sh
+    
+    start.sh stop
+    start.sh clean
     
     # 构建并启动（显示进度）
     print_info "开始构建 Docker 镜像..."
     echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
     
-    chmod +x start.sh
+
     start.sh start --build
     
     
