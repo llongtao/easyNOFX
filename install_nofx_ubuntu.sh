@@ -3,7 +3,7 @@ tgfr#!/bin/bash
 # ================================================================
 # NOFX AI 交易机器人 - Ubuntu 24.04 LTS 专用一键部署脚本
 # ================================================================
-# 作者: 375.btc (行雲) | Twitter: @hangzai
+# 原作者: 375.btc (行雲) | Twitter: @hangzai
 # 演示网站: https://tr.aexp.top/
 # 项目地址: https://github.com/NoFxAiOS/nofx
 # 系统要求: Ubuntu 24.04 LTS (Noble Numbat)
@@ -119,7 +119,7 @@ print_header() {
 ║                                                                  ║
 ║        支持交易所: Binance | Hyperliquid | Aster                ║
 ║                                                                  ║
-║        作者: 375.btc (行雲)  |  Twitter: @hangzai               ║
+║        作者: 抖音 星火丶               ║
 ║        演示: https://tr.aexp.top/                         ║
 ║                                                                  ║
 ╚══════════════════════════════════════════════════════════════════╝
@@ -181,7 +181,7 @@ show_welcome() {
     echo ""
     echo -e "${YELLOW}💡 演示网站: ${BLUE}https://tr.aexp.top/${NC}"
     echo -e "${YELLOW}📖 项目地址: ${BLUE}https://github.com/NoFxAiOS/nofx${NC}"
-    echo -e "${YELLOW}👤 作者: ${BLUE}375.btc (行雲) | @hangzai${NC}"
+    echo -e "${YELLOW}👤 作者: ${BLUE}抖音 星火丶${NC}"
     echo ""
     
     read -p "按回车键开始部署..."
@@ -1263,7 +1263,6 @@ EOF
     echo -e "  ${YELLOW}项目地址:${NC}      ${BLUE}https://github.com/NoFxAiOS/nofx${NC}"
     echo -e "  ${YELLOW}部署文档:${NC}      ${BLUE}https://github.com/NoFxAiOS/nofx/blob/main/DOCKER_DEPLOY.md${NC}"
     echo -e "  ${YELLOW}问题反馈:${NC}      ${BLUE}https://github.com/NoFxAiOS/nofx/issues${NC}"
-    echo -e "  ${YELLOW}作者 Twitter:${NC}  ${BLUE}@hangzai${NC}"
     echo ""
     
     echo -e "${CYAN}${BOLD}📈 监控建议${NC}"
@@ -1327,7 +1326,7 @@ EOF
     else
         echo ""
         echo -e "${GREEN}${BOLD}✨ 感谢使用 NOFX AI 交易竞赛系统！${NC}"
-        echo -e "${CYAN}作者: 375.btc (行雲) | Twitter: @hangzai${NC}"
+        echo -e "${CYAN}作者: 抖音 星火丶${NC}"
         echo -e "${CYAN}祝您交易顺利！🚀${NC}"
         echo ""
     fi
