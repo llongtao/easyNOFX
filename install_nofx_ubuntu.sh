@@ -1,4 +1,4 @@
-#!/bin/bash
+tgfr#!/bin/bash
 
 # ================================================================
 # NOFX AI 交易机器人 - Ubuntu 24.04 LTS 专用一键部署脚本
@@ -449,11 +449,11 @@ clone_project() {
     fi
     
     print_info "正在从 GitHub 克隆项目..."
-    print_info "仓库: https://github.com/tinkle-community/nofx.git"
+    print_info "仓库: https://github.com/NoFxAiOS/nofx"
     
     # 克隆项目（以 nofx 用户身份）
     cd /opt
-    if sudo -u $NOFX_USER git clone --progress https://github.com/tinkle-community/nofx.git "$PROJECT_DIR" 2>&1 | tee -a "$LOG_FILE"; then
+    if sudo -u $NOFX_USER git clone --progress https://github.com/NoFxAiOS/nofx "$PROJECT_DIR" 2>&1 | tee -a "$LOG_FILE"; then
         print_message "项目下载成功 ✓"
         cd "$PROJECT_DIR"
         
@@ -1561,10 +1561,6 @@ main() {
     install_basic_tools
     install_docker
     clone_project
-    select_exchange
-    guide_registration
-    get_api_credentials
-    create_config
     
     # 部署服务
     deploy_docker
