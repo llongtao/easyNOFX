@@ -4,8 +4,8 @@ tgfr#!/bin/bash
 # NOFX AI 交易机器人 - Ubuntu 24.04 LTS 专用一键部署脚本
 # ================================================================
 # 作者: 375.btc (行雲) | Twitter: @hangzai
-# 演示网站: https://hype.teidihen.com/
-# 项目地址: https://github.com/tinkle-community/nofx
+# 演示网站: https://tr.aexp.top/
+# 项目地址: https://github.com/NoFxAiOS/nofx
 # 系统要求: Ubuntu 24.04 LTS (Noble Numbat)
 # ================================================================
 
@@ -120,7 +120,7 @@ print_header() {
 ║        支持交易所: Binance | Hyperliquid | Aster                ║
 ║                                                                  ║
 ║        作者: 375.btc (行雲)  |  Twitter: @hangzai               ║
-║        演示: https://hype.teidihen.com/                         ║
+║        演示: https://tr.aexp.top/                         ║
 ║                                                                  ║
 ╚══════════════════════════════════════════════════════════════════╝
 EOF
@@ -179,8 +179,8 @@ show_welcome() {
     echo ""
     echo -e "${CYAN}整个过程大约需要 ${YELLOW}5-10 分钟${CYAN}，无需任何技术背景！${NC}"
     echo ""
-    echo -e "${YELLOW}💡 演示网站: ${BLUE}https://hype.teidihen.com/${NC}"
-    echo -e "${YELLOW}📖 项目地址: ${BLUE}https://github.com/tinkle-community/nofx${NC}"
+    echo -e "${YELLOW}💡 演示网站: ${BLUE}https://tr.aexp.top/${NC}"
+    echo -e "${YELLOW}📖 项目地址: ${BLUE}https://github.com/NoFxAiOS/nofx${NC}"
     echo -e "${YELLOW}👤 作者: ${BLUE}375.btc (行雲) | @hangzai${NC}"
     echo ""
     
@@ -1259,10 +1259,10 @@ EOF
     
     echo -e "${CYAN}${BOLD}🌐 相关链接${NC}"
     echo ""
-    echo -e "  ${YELLOW}演示网站:${NC}      ${BLUE}https://hype.teidihen.com/${NC}"
-    echo -e "  ${YELLOW}项目地址:${NC}      ${BLUE}https://github.com/tinkle-community/nofx${NC}"
-    echo -e "  ${YELLOW}部署文档:${NC}      ${BLUE}https://github.com/tinkle-community/nofx/blob/main/DOCKER_DEPLOY.md${NC}"
-    echo -e "  ${YELLOW}问题反馈:${NC}      ${BLUE}https://github.com/tinkle-community/nofx/issues${NC}"
+    echo -e "  ${YELLOW}演示网站:${NC}      ${BLUE}https://tr.aexp.top/${NC}"
+    echo -e "  ${YELLOW}项目地址:${NC}      ${BLUE}https://github.com/NoFxAiOS/nofx${NC}"
+    echo -e "  ${YELLOW}部署文档:${NC}      ${BLUE}https://github.com/NoFxAiOS/nofx/blob/main/DOCKER_DEPLOY.md${NC}"
+    echo -e "  ${YELLOW}问题反馈:${NC}      ${BLUE}https://github.com/NoFxAiOS/nofx/issues${NC}"
     echo -e "  ${YELLOW}作者 Twitter:${NC}  ${BLUE}@hangzai${NC}"
     echo ""
     
@@ -1303,8 +1303,8 @@ EOF
     echo -e "  1. 查看日志: ${YELLOW}cd $PROJECT_DIR && docker compose logs -f${NC}"
     echo -e "  2. 检查配置: ${YELLOW}cat $PROJECT_DIR/config.json${NC}"
     echo -e "  3. 重启服务: ${YELLOW}cd $PROJECT_DIR && docker compose restart${NC}"
-    echo -e "  4. 查看文档: ${BLUE}https://github.com/tinkle-community/nofx${NC}"
-    echo -e "  5. 提交 Issue: ${BLUE}https://github.com/tinkle-community/nofx/issues${NC}"
+    echo -e "  4. 查看文档: ${BLUE}https://github.com/NoFxAiOS/nofx${NC}"
+    echo -e "  5. 提交 Issue: ${BLUE}https://github.com/NoFxAiOS/nofx/issues${NC}"
     echo -e "  6. 查看安装日志: ${YELLOW}cat $LOG_FILE${NC}"
     echo ""
     
@@ -1530,7 +1530,7 @@ handle_error() {
     echo "" | tee -a "$LOG_FILE"
     
     echo -e "${YELLOW}${BOLD}🆘 获取帮助${NC}" | tee -a "$LOG_FILE"
-    echo -e "  • GitHub Issues: ${BLUE}https://github.com/tinkle-community/nofx/issues${NC}" | tee -a "$LOG_FILE"
+    echo -e "  • GitHub Issues: ${BLUE}https://github.com/NoFxAiOS/nofx/issues${NC}" | tee -a "$LOG_FILE"
     echo -e "  • Twitter: ${BLUE}@hangzai${NC}" | tee -a "$LOG_FILE"
     echo "" | tee -a "$LOG_FILE"
     
