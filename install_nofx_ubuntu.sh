@@ -455,10 +455,12 @@ clone_project() {
     cd /opt
     if sudo -u $NOFX_USER git clone --progress https://github.com/NoFxAiOS/nofx "$PROJECT_DIR" 2>&1 | tee -a "$LOG_FILE"; then
         print_message "项目下载成功 ✓"
-        cd "$PROJECT_DIR"
+        
         
         # 设置正确的权限
         chown -R $NOFX_USER:$NOFX_USER "$PROJECT_DIR"
+
+        cd "$PROJECT_DIR"
         
         # 显示项目信息
         local commit_hash=$(sudo -u $NOFX_USER git rev-parse --short HEAD)
