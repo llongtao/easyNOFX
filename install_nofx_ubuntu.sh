@@ -458,7 +458,7 @@ clone_project() {
         
         
         # 设置正确的权限
-        chown -R $NOFX_USER:$NOFX_USER "$PROJECT_DIR"
+        chmod 777 "$PROJECT_DIR"
 
         cd "$PROJECT_DIR"
         
