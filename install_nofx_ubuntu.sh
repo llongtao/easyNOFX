@@ -1068,15 +1068,15 @@ deploy_docker() {
     print_info "清理旧容器和网络..."
     chmod +x start.sh
     
-    start.sh stop
-    start.sh clean
+    ./start.sh stop
+    ./start.sh clean
     
     # 构建并启动（显示进度）
     print_info "开始构建 Docker 镜像..."
     echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
     
 
-    start.sh start --build
+    ./start.sh start --build
     
     
     # 配置防火墙
