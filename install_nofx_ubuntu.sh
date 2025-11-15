@@ -1068,7 +1068,7 @@ deploy_docker() {
     
     # 清理旧容器（如果存在）
     print_info "清理旧容器和网络..."
-    chmod +x start.sh
+    chmod 777 start.sh
     
     ./start.sh stop
     ./start.sh clean
